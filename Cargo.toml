@@ -2,5 +2,22 @@
 name = "todolist"
 version = "0.1.0"
 edition = "2024"
+description = "A modern, fast command-line todo list manager written in Rust."
+authors = ["mozarta-nexus 1447153224@qq.com"]
+license = "Apache-2.0"
+repository = "https://github.com/mozarta-nexus/todolist.git"
+readme = "README.md"
+keywords = ["todo", "cli", "task-management"]
+categories = ["command-line-utilities"]
 
 [dependencies]
+anyhow = "1.0.100"
+chrono = { version = "0.4.42", features = ["serde", "alloc"] }
+clap = { version = "4.5.51", features = ["derive"] }
+colored = "3.0.0"
+directories = "6.0.0"
+dirs = "6.0.0"
+prettytable-rs = "0.10.0"
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.145"
+thiserror = "2.0.17"
